@@ -1,6 +1,6 @@
 <header>
   {%- assign default_paths = site.pages | map: "path" -%}
-  {%- assign page_paths = site.header_pages | default: default_paths -%}
+  {%- assign page_paths = site.bootstrap.header_pages | default: default_paths -%}
   {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
