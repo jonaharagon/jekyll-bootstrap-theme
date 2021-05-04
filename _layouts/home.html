@@ -1,6 +1,9 @@
+---
+layout: default
+---
 <div class="home">
   {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
+    <h1 class="page-heading py-3">{{ page.title }}</h1>
   {%- endif -%}
 
   {{ content }}
@@ -17,13 +20,13 @@
     {%- if page.list_title -%}
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
-    <ul class="post-list">
+    <ul class="post-list list-unstyled">
       {%- assign date_format = site.bootstrap.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
-      <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <li class="mb-5">
+        <span class="post-meta text-muted">{{ post.date | date: date_format }}</span>
         <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
+          <a class="post-link text-decoration-none" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
         </h3>

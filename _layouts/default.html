@@ -3,18 +3,19 @@
 
   {%- include head.html -%}
 
-  <body>
+  <body class="d-flex flex-column vw-100 vh-100">
 
     {%- include header.html -%}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
+    <main class="page-content py-5 flex-shrink-0" aria-label="Content">
+      <div class="container">
+      {{ content }}
       </div>
     </main>
 
     {%- include footer.html -%}
 
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
   </body>
 
 </html>
