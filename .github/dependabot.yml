@@ -8,7 +8,6 @@ updates:
       interval: "daily"
     allow:
       - dependency-type: "all"
-    versioning-strategy: widen
 
   - package-ecosystem: "npm"
     directory: "/"
