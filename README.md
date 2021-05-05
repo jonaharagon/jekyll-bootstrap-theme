@@ -1,19 +1,23 @@
 # jekyll-bootstrap-theme
 
+[![Gem Version](https://badge.fury.io/rb/jekyll-bootstrap-theme.svg)](https://badge.fury.io/rb/jekyll-bootstrap-theme)
+
 A basic but extensible Jekyll theme based on Bootstrap 5.
 
-[Theme preview](https://jonaharagon.github.io/jekyll-bootstrap-theme/)
+[Theme preview](https://jonaharagon.github.io/jekyll-bootstrap-theme/) - **[One-Click Install (GitHub Pages)](https://github.com/jonaharagon/jekyll-bootstrap-template/generate)** - [RubyGems.org](https://rubygems.org/gems/jekyll-bootstrap-theme)
 
 ![Bootstrap theme preview](/screenshot.png)
 
-## Installation
+## Install
+
+If you are able to install custom Gems on your build server/web server, install via the **Gemfile** method described here. GitHub Pages users cannot install custom Gems, and must instead use the **Remote Theme** Jekyll plugin to use this theme.
 
 ### Gemfile
 
 Add this line to your `Gemfile`:
 
 ```ruby
-gem 'jekyll-bootstrap-theme', '~> 0'
+gem 'jekyll-bootstrap-theme'
 ```
 
 And add this line to your site's `_config.yml`:
@@ -40,10 +44,13 @@ Or install it yourself as:
 
 GitHub Pages websites cannot use custom Gems. Instead, you can add this repository as a `remote_theme`:
 
-After making a Jekyll repo, add the following to your Gemfile, then run `bundle` to install the plugin:
+After making a Jekyll repo, add `gem "jekyll-remote-theme"` to the `:jekyll_plugins` group in your `Gemfile`, then run `bundle` to install the plugin:
 
 ```ruby
-gem "jekyll-remote-theme"
+group :jekyll_plugins do
+  [...]
+  gem "jekyll-remote-theme"
+end
 ```
 
 Add the following to your site's `_config.yml` to activate the plugin and select this theme:
@@ -173,6 +180,12 @@ excerpts:
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/jonaharagon/jekyll-bootstrap-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+**Development Requirements:**
+
+- `yarn`
+
+Updating packages: `yarn run assets:clean && yarn upgrade && yarn run assets:install`
 
 ## License
 
