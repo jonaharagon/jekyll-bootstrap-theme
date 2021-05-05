@@ -32,9 +32,15 @@ Or install it yourself as:
 
 ### Remote Theme (GitHub Pages)
 
-GitHub Pages websites cannot use custom Gems. You can either [use this repository as a template](https://github.com/jonaharagon/jekyll-bootstrap-theme/generate), or add this repository as a `remote_theme`:
+#### One-Click Install
 
-Add the following to your Gemfile, then run `bundle` to install the plugin:
+- **[Create Repository from Pre-Made Template](https://github.com/jonaharagon/jekyll-bootstrap-template/generate)**
+
+#### Manual Install
+
+GitHub Pages websites cannot use custom Gems. Instead, you can add this repository as a `remote_theme`:
+
+After making a Jekyll repo, add the following to your Gemfile, then run `bundle` to install the plugin:
 
 ```ruby
 gem "jekyll-remote-theme"
@@ -52,7 +58,7 @@ remote_theme: jonaharagon/jekyll-bootstrap-theme
 Optionally, you can specify a [release](https://github.com/jonaharagon/jekyll-bootstrap-theme/releases), [branch](https://github.com/jonaharagon/jekyll-bootstrap-theme/branches), or [tag](https://github.com/jonaharagon/jekyll-bootstrap-theme/tags) to lock the theme version in place:
 
 ```yaml
-remote_theme: jonaharagon/jekyll-bootstrap-theme@v1.0.0
+remote_theme: jonaharagon/jekyll-bootstrap-theme@v0.1.0
 ```
 
 ## Theme Contents
