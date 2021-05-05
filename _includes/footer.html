@@ -24,10 +24,12 @@
         <p>{{ site.description | escape }}</p>
       </div>
     </div>
+    {%- if site.bootstrap.social_links -%}
     <div class="row py-3">
       <div class="col">
         {%- include social.html -%}
       </div>
     </div>
+    {%- endif -%}
   </div>
 </footer>

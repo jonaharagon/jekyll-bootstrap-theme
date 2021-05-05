@@ -10,13 +10,13 @@ A basic but extensible Jekyll theme based on Bootstrap 5.
 
 ### Gemfile
 
-Add this line to your Jekyll site's `Gemfile`:
+Add this line to your `Gemfile`:
 
 ```ruby
-gem "jekyll-bootstrap-theme"
+gem 'jekyll-bootstrap-theme', '~> 0'
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
+And add this line to your site's `_config.yml`:
 
 ```yaml
 theme: jekyll-bootstrap-theme
@@ -52,7 +52,7 @@ remote_theme: jonaharagon/jekyll-bootstrap-theme
 Optionally, you can specify a [release](https://github.com/jonaharagon/jekyll-bootstrap-theme/releases), [branch](https://github.com/jonaharagon/jekyll-bootstrap-theme/branches), or [tag](https://github.com/jonaharagon/jekyll-bootstrap-theme/tags) to lock the theme version in place:
 
 ```yaml
-remote_theme: jonaharagon/jekyll-bootstrap-theme@v5.0.0-beta3
+remote_theme: jonaharagon/jekyll-bootstrap-theme@v1.0.0
 ```
 
 ## Theme Contents
