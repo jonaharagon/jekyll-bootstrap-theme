@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-version = "0.1.1"
+version = "1.0.0"
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-bootstrap-theme"
   spec.version       = version
-  spec.homepage      = "https://github.com/jonaharagon/jekyll-bootstrap-theme/"
+  spec.homepage      = "https://github.com/jonaharagon/jekyll-bootstrap-theme"
 
   spec.author        = "Jonah Aragon"
   spec.email         = "jonah@triplebit.net"
@@ -34,7 +34,7 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
 
-  spec.add_runtime_dependency "jekyll", ">= 4.2", "<5.0"
+  spec.add_runtime_dependency "jekyll", ">= 4.0", "<5.0"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.9"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.1"
 
