@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-version = "1.0.0"
+version = "1.1.0"
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-bootstrap-theme"
